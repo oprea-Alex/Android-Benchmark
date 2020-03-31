@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Benchmark</string>
+    <string name="ssTV_benchmark_welcome_text">Benchmark</string>
+    <string name="ssTV_unbiased_benchmarking_tool">Unbiased benchmarking tool</string>
+    <string name="TV_application_logo">Application Logo</string>
+    <string name="loginTV_welcome">Welcome!</string>
+    <string name="loginTV_please_sign_in_to_continue">Please sign in to continue</string>
+    <string name="loginTV_username_hint">Username</string>
+    <string name="loginTV_password_hint">Please enter password here</string>
+    <string name="loginBTN_forgot_password_hint">Forgot password?</string>
+    <string name="signupTV_to_start_text_view">SignUp to start benchmarking!</string>
+    <string name="loginTV_click_app_logo_to_guest">Click on the app logo to continue as a Guest user!</string>
+    <string name="loginBTN_login">LogIn</string>
+    <string name="loginBTN_new_user">New user? SIGN UP NOW!</string>
+    <string name="signupTV_full_name_hint">Full Name</string>
+    <string name="signupTV_email_address_hint">Email address</string>
+    <string name="signupBTN_sign_up">SIGN UP</string>
+    <string name="signupBTN_go_to_login">Already have an account? Please log in</string>
+    <string name="dashboardBTN_start_benchmark">START Benchmark</string>
+    <string name="dashboardBTN_benchmark_results">Benchmark Results</string>
+    <string name="dashboardBTN_performance_analysis">Performance Analysis</string>
+    <string name="userprofileTV_full_name">Alex Oprea</string>
+    <string name="userprofileTV_username">alex_oprea</string>
+    <string name="userprofileTV_phone_name">OnePlus Phone</string>
+    <string name="userprofileTV_your_device">Your device</string>
+    <string name="userprofileTV_user_phone_rank">1st</string>
+    <string name="userphoneTV_user_phone_points">1200</string>
+    <string name="userprofileET_full_name">Alex Oprea</string>
+    <string name="userprofileET_email">oprea.alxandru199@gmail.com</string>
+    <string name="userprofileET_username">alex_oprea</string>
+    <string name="userprofileET_password"></string>
+    <string name="userprofileBTN_update_profile">Update profile</string>
+</resources>
