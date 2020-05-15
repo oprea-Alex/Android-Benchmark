@@ -2,13 +2,17 @@ package ro.mta.benchmark;
 
 import android.app.Application;
 
+import androidx.room.Room;
+
 import com.jakewharton.threetenabp.AndroidThreeTen;
 
+import ro.mta.benchmark.data.local.database.AppDatabase;
 import timber.log.Timber;
 
 public class App extends Application {
 
-    public static App mApplicationInstance = null;
+    private static App mApplicationInstance = null;
+    private static AppDatabase mDatabaseInstance = null;
 
     @Override
     public void onCreate() {
@@ -21,9 +25,21 @@ public class App extends Application {
         AndroidThreeTen.init(this);
 
         //Initialization of singleton components
-
+        mDatabaseInstance = Room.databaseBuilder(
+                this,
+                AppDatabase.class,
+                "benchmark_database").fallbackToDestructiveMigration()
+                .build();
 
 
         Timber.d("App has been initialized...");
+    }
+
+    public static App getInstance() {
+        return mApplicationInstance;
+    }
+
+    public static AppDatabase getDatabaseInstance(){
+        return mDatabaseInstance;
     }
 }
