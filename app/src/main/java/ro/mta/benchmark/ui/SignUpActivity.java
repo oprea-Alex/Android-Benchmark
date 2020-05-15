@@ -1,6 +1,4 @@
-package ro.mta.benchmark;
-
-import androidx.appcompat.app.AppCompatActivity;
+package ro.mta.benchmark.ui;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,11 +6,15 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Objects;
+
+import ro.mta.benchmark.R;
 
 public class SignUpActivity extends AppCompatActivity {
 

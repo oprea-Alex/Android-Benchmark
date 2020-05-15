@@ -1,4 +1,4 @@
-package ro.mta.benchmark;
+package ro.mta.benchmark.ui;
 
 public class UserInfoContainer {
     private String name;

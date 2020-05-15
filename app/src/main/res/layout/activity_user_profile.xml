@@ -1,235 +1,244 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserProfileActivity">
+    tools:context=".ui.UserProfileActivity">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="280dp"
-            android:background="@color/appThemeColor"
-            android:padding="20dp">
-
-            <ImageView
-                android:id="@+id/userprofileIV_profile_image"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/person_image" />
-
-            <TextView
-                android:id="@+id/userprofileTV_full_name_up"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/userprofileIV_profile_image"
-                android:fontFamily="@font/bungee"
-                android:includeFontPadding="false"
-                android:text="@string/userprofileTV_full_name"
-                android:textColor="@color/whiteColor"
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_below="@id/userprofileTV_full_name_up"
-                android:layout_marginLeft="10dp"
-                android:layout_toRightOf="@id/userprofileIV_profile_image"
-                android:text="@string/userprofileTV_username"
-                android:textColor="@color/whiteColor"
-                android:textSize="14sp" />
-
-        </RelativeLayout>
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="-100dp"
-            android:padding="20dp">
+            android:orientation="vertical">
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                app:cardBackgroundColor="@color/appThemeColor"
-                app:cardElevation="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@color/appThemeColor"
+                android:padding="20dp">
 
-                <RelativeLayout
+                <ImageView
+                    android:id="@+id/userprofileIV_profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/person_image" />
+
+                <TextView
+                    android:id="@+id/userprofileTV_full_name_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/userprofileIV_profile_image"
+                    android:fontFamily="@font/bungee"
+                    android:includeFontPadding="false"
+                    android:text="@string/userprofileTV_full_name"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="20sp" />
+
+                <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="5dp">
+                    android:layout_below="@id/userprofileTV_full_name_up"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/userprofileIV_profile_image"
+                    android:text="@string/userprofileTV_username"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="14sp" />
 
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/user_phone_image" />
+            </RelativeLayout>
 
-                    <TextView
-                        android:id="@+id/userprofileTV_user_phone_name"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:fontFamily="@font/bungee"
-                        android:includeFontPadding="false"
-                        android:text="@string/userprofileTV_phone_name"
-                        android:textColor="@color/whiteColor"
-                        android:textSize="16sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-90dp"
+                android:padding="20dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/userprofileTV_user_phone_name"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="5dp"
-                        android:includeFontPadding="false"
-                        android:text="@string/userprofileTV_your_device"
-                        android:textColor="@color/whiteColor"
-                        android:textSize="12sp" />
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/appThemeColor"
+                    app:cardElevation="10dp">
 
-                </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
 
-            </com.google.android.material.card.MaterialCardView>
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/user_phone_image" />
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                android:layout_margin="10dp"
-                android:layout_weight="1"
-                app:cardBackgroundColor="@color/appThemeColor"
-                app:cardElevation="10dp">
+                        <TextView
+                            android:id="@+id/userprofileTV_user_phone_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/bungee"
+                            android:includeFontPadding="false"
+                            android:text="@string/userprofileTV_phone_name"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="16sp" />
 
-                <RelativeLayout
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/userprofileTV_user_phone_name"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/userprofileTV_your_device"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/appThemeColor"
+                    app:cardElevation="10dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/ranking_image" />
+
+                        <TextView
+                            android:id="@+id/userprofileTV_user_phone_rank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:fontFamily="@font/bungee"
+                            android:includeFontPadding="false"
+                            android:text="@string/userprofileTV_user_phone_rank"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/userprofileTV_user_phone_rank"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:includeFontPadding="false"
+                            android:text="@string/userphoneTV_user_phone_points"
+                            android:textColor="@color/whiteColor"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-30dp"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/userprofileET_full_name"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="5dp">
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/signupTV_full_name_hint">
 
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
-                        android:src="@drawable/ranking_image" />
-
-                    <TextView
-                        android:id="@+id/userprofileTV_user_phone_rank"
-                        android:layout_width="wrap_content"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:fontFamily="@font/bungee"
-                        android:includeFontPadding="false"
-                        android:text="@string/userprofileTV_user_phone_rank"
-                        android:textColor="@color/whiteColor"
-                        android:textSize="20sp" />
+                        android:drawableLeft="@drawable/user_person_small_image"
+                        android:drawablePadding="10dp"
+                        android:text="@string/userprofileET_full_name" />
 
-                    <TextView
-                        android:layout_width="wrap_content"
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/userprofileET_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/signupTV_email_address_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/userprofileTV_user_phone_rank"
-                        android:layout_centerInParent="true"
-                        android:layout_marginTop="5dp"
-                        android:includeFontPadding="false"
-                        android:text="@string/userphoneTV_user_phone_points"
-                        android:textColor="@color/whiteColor"
-                        android:textSize="12sp" />
+                        android:drawableLeft="@drawable/user_email_small_image"
+                        android:drawablePadding="10dp"
+                        android:text="@string/userprofileET_email" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-                </RelativeLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/loginTV_username_hint">
 
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/user_username_small_image"
+                        android:drawablePadding="10dp"
+                        android:enabled="false"
+                        android:text="@string/userprofileET_username" />
+                </com.google.android.material.textfield.TextInputLayout>
 
-            </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:hint="@string/loginTV_password_hint"
+                    app:passwordToggleEnabled="true">
 
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/user_person_small_image"
+                        android:drawablePadding="10dp"
+                        android:text="@string/userprofileET_password" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/userprofileBTN_update_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="#246428"
+                    android:fontFamily="@font/bungee"
+                    android:text="@string/userprofileBTN_update_profile"
+                    android:textColor="@color/whiteColor" />
+
+            </LinearLayout>
 
         </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:id="@+id/userprofileET_full_name"
-                android:hint="@string/signupTV_full_name_hint">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/user_person_small_image"
-                    android:drawablePadding="10dp"
-                    android:text="@string/userprofileET_full_name" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:id="@+id/userprofileET_email"
-                android:hint="@string/signupTV_email_address_hint">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/user_email_small_image"
-                    android:drawablePadding="10dp"
-                    android:text="@string/userprofileET_email" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:hint="@string/loginTV_username_hint">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/user_username_small_image"
-                    android:drawablePadding="10dp"
-                    android:enabled="false"
-                    android:text="@string/userprofileET_username" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:hint="@string/loginTV_password_hint"
-                app:passwordToggleEnabled="true">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/user_person_small_image"
-                    android:drawablePadding="10dp"
-                    android:text="@string/userprofileET_password" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#246428"
-                android:fontFamily="@font/bungee"
-                android:id="@+id/userprofileBTN_update_profile"
-                android:text="@string/userprofileBTN_update_profile"
-                android:textColor="@color/whiteColor"
-                android:layout_marginTop="30dp"/>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-</ScrollView>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

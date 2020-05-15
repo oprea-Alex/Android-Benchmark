@@ -8,11 +8,39 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.1'
+        classpath 'com.android.tools.build:gradle:3.6.3'
         
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+    }
+
+    ext {
+
+        // App dependencies
+        androidxAppCompatVersion = '1.1.0'
+        androidxCardViewVersion = '1.0.0'
+        androidxConstraintLayoutVersion = '2.0.0-beta5'
+        androidxRecyclerViewVersion = '1.1.0'
+        androidxLifecycleVersion = '2.2.0'
+
+        roomVersion = '2.2.5'
+
+        okHttpVersion = '4.6.0'
+        gsonVersion = '2.8.6'
+        retrofitVersion = '2.8.1'
+
+        rxJavaVersion = '2.2.19'
+        rxAndroidVersion = '2.1.1'
+
+        timberVersion = '4.7.1'
+        threeTenVersion = '1.2.4'
+        picassoVersion = '2.71828'
+
+        // Test dependencies
+        testRunnerVersion = '1.1.1'
+        espressoVersion = '3.2.0'
+        junitVersion = '4.12'
     }
 }
 

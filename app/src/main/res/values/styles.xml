@@ -2,22 +2,20 @@
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <!-- Adding fullscreen will just hide the status bar -->
+        <!-- Window Options -->
+        <item name="android:windowContentTransitions">true</item>
         <item name="android:windowFullscreen">true</item>
 
-        <item name="android:windowLayoutInDisplayCutoutMode">shortEdges</item>
+        <!-- Navigation Bar -->
         <item name="android:windowTranslucentNavigation">true</item>
 
+        <!-- Application status Bar -->
         <item name="android:statusBarColor">#fff</item>
         <item name="android:windowLightStatusBar">true</item>
-        
-        <item name="android:windowContentTransitions">true</item>
-
     </style>
 
 </resources>

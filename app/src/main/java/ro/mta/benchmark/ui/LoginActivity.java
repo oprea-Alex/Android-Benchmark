@@ -1,6 +1,4 @@
-package ro.mta.benchmark;
-
-import androidx.appcompat.app.AppCompatActivity;
+package ro.mta.benchmark.ui;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
@@ -12,7 +10,11 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputLayout;
+
+import ro.mta.benchmark.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -62,7 +64,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void launchMenu(View view) {
-        Intent intent = new Intent(LoginActivity.this,DashboardActivity.class);
+        Intent intent = new Intent(LoginActivity.this,UserProfileActivity.class);
         startActivity(intent);
         finish();
     }

@@ -1,6 +1,4 @@
-package ro.mta.benchmark;
-
-import androidx.appcompat.app.AppCompatActivity;
+package ro.mta.benchmark.ui;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
@@ -13,6 +11,10 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import ro.mta.benchmark.R;
 
 public class SplashScreen extends AppCompatActivity {
 

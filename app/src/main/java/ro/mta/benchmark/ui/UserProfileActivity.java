@@ -1,10 +1,12 @@
-package ro.mta.benchmark;
-
-import androidx.appcompat.app.AppCompatActivity;
+package ro.mta.benchmark.ui;
 
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import ro.mta.benchmark.R;
 
 public class UserProfileActivity extends AppCompatActivity {
 

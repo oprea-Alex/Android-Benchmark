@@ -1,11 +1,12 @@
-package ro.mta.benchmark;
+package ro.mta.benchmark.ui;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import ro.mta.benchmark.R;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -17,8 +18,5 @@ public class DashboardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_dashboard);
     }
 
-    public void lauchUserProfile(View view) {
-        Intent intent = new Intent(DashboardActivity.this,UserProfileActivity.class);
-        startActivity(intent);
-    }
+
 }
